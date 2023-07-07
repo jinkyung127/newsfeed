@@ -41,7 +41,7 @@ router.post('/signup', async (req, res) => {
         service: 'gmail', // 이메일
         auth: {
           user: 'jgim51148@gmail.com', // 발송자 이메일
-          pass: 'awwfahzbrhrpqxww', // 발송자 비밀번호
+          pass: process.env.NODE_MAILER_PSWD // 발송자 비밀번호
         },
       });
 
